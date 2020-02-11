@@ -29,6 +29,7 @@ public class PayrollUtils {
 			payment.setAccountNo(ba.getAccountNo());
 			payment.setC_BP_BankAccount_ID(C_BP_BankAccount_ID);
 		}
+		payment.set_ValueOfColumn("AD_Client_ID", psline.getAD_Client_ID());
 		payment.setAD_Org_ID(psline.getAD_Org_ID());
 		payment.setDateAcct(ps.getDateDoc());
 		payment.setC_BPartner_ID(psline.get_ValueAsInt("C_BPartner_ID"));

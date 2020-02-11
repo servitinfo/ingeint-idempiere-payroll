@@ -23,7 +23,7 @@ import org.compiere.util.KeyNamePair;
 
 /** Generated Interface for HR_PaymentSelection
  *  @author iDempiere (generated) 
- *  @version Release 5.1
+ *  @version Release 7.1
  */
 @SuppressWarnings("all")
 public interface I_HR_PaymentSelection 
@@ -32,7 +32,7 @@ public interface I_HR_PaymentSelection
     /** TableName=HR_PaymentSelection */
     public static final String Table_Name = "HR_PaymentSelection";
 
-    /** AD_Table_ID=1000024 */
+    /** AD_Table_ID=1000123 */
     public static final int Table_ID = MTable.getTable_ID(Table_Name);
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
@@ -312,6 +312,17 @@ public interface I_HR_PaymentSelection
 	public int getHR_Process_ID();
 
 	public org.eevolution.model.I_HR_Process getHR_Process() throws RuntimeException;
+
+    /** Column name ING_PaymentSelectionType_ID */
+    public static final String COLUMNNAME_ING_PaymentSelectionType_ID = "ING_PaymentSelectionType_ID";
+
+	/** Set ING_PaymentSelectionType	  */
+	public void setING_PaymentSelectionType_ID (int ING_PaymentSelectionType_ID);
+
+	/** Get ING_PaymentSelectionType	  */
+	public int getING_PaymentSelectionType_ID();
+
+	public I_ING_PaymentSelectionType getING_PaymentSelectionType() throws RuntimeException;
 
     /** Column name IsActive */
     public static final String COLUMNNAME_IsActive = "IsActive";

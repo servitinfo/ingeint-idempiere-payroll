@@ -787,7 +787,7 @@ public class MHRProcess extends X_HR_Process implements DocAction {
 		MBPartner[] linesEmployee =null;
 		if (includeInActiveEmployee){
 			linesEmployee = MHREmployee.getEmployeesAll(this,allOrg);
-		}else{
+ 		}else{
 			linesEmployee = MHREmployee.getEmployees(this);
 		}
 		linesConcept = MHRPayrollConcept.getPayrollConcepts(this);
@@ -830,6 +830,8 @@ public class MHRProcess extends X_HR_Process implements DocAction {
 			m_scriptCtx.remove("_DateEnd");
 			m_scriptCtx.remove("_Days");
 			m_scriptCtx.remove("_C_BPartner_ID");
+			if (m_employee	== null)
+				throw new AdempiereException("Error: Verifique la informacion del empleado: "+bp.getName()+"_"+bp.getTaxID());
 			m_scriptCtx.put("_DateStart", m_employee.getStartDate());
 			m_scriptCtx.put(
 					"_DateEnd",

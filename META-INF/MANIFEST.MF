@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: com.ingeint.idempierePayroll
-Bundle-SymbolicName: com.ingeint.idempierePayroll;singleton:=true
+Bundle-SymbolicName: com.ingeint.idempierePayroll
 Bundle-Version: 7.1.0.qualifier
 Bundle-Activator: org.adempiere.plugin.utils.Incremental2PackActivator
 Bundle-Vendor: INGEINT <https:www.//ingeint.com>

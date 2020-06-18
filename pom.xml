@@ -6,7 +6,7 @@
 		<groupId>org.idempiere</groupId>
 		<artifactId>org.idempiere.parent</artifactId>
 		<version>7.1.0-SNAPSHOT</version>
-		<relativePath>../../idempiere-release/idempiere/org.idempiere.parent/pom.xml</relativePath>
+		<relativePath>../../../../eclipse-workspace/ws71-release/sitlabor/org.idempiere.parent/pom.xml</relativePath>
 	</parent>
 	<artifactId>com.ingeint.idempierePayroll</artifactId>
 	<packaging>eclipse-plugin</packaging>
